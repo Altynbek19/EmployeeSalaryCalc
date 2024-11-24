@@ -1,11 +1,114 @@
-﻿# Employee Salary Management Application
+﻿# Приложение для управления зарплатами сотрудников
 
- ## Description
-### The Employee Salary Management Application is a JavaFX-based desktop application designed to manage and calculate salaries for various types of employees. The program employs Object-Oriented Programming (OOP) principles, allowing users to:
+ ## Описание
+### Приложение для управления зарплатами сотрудников – это настольное приложение на основе JavaFX, предназначенное для добавления, расчета и управления зарплатами различных типов сотрудников. Программа демонстрирует принципы объектно-ориентированного программирования (ООП), включая наследование, полиморфизм и работу с абстрактными классами.
+
+## Основные возможности:
 
 <ul>
-  <li>Add employees (Full-time, Part-time, and Contractors).</li>
-  <li>Display employee details in a table, including their names, types, and calculated salaries.</li>
-  <li>Recalculate salaries based on updated information.</li>
-  <li>Remove employees from the list.</li>
+  <li><strong>Добавление сотрудников:</strong> Поддерживаются три типа сотрудников: Полный рабочий день (Full-time), Неполный рабочий день (Part-time) и Подрядчики (Contractor).</li>
+  <li><strong>Таблица сотрудников:</strong> Отображает список добавленных сотрудников с информацией о имени, типе и рассчитанной зарплате.</li>
+  <li><strong>Расчет зарплат:</strong> Пересчитывает зарплаты сотрудников на основе введенных данных.</li>
+  <li><strong>Удаление сотрудников:</strong> Позволяет удалять выбранных сотрудников из списка.</li>
+  <li><strong>Удобный интерфейс:</strong> Все действия выполняются через интуитивно понятный графический интерфейс.</li>
 </ul>
+
+## Инструкция по запуску
+
+### Требования
+1) Установленный Java Development Kit (JDK) версии 11 или выше.
+2) Установленный и настроенный JavaFX SDK.
+3) Среда разработки, например, IntelliJ IDEA или Eclipse (с плагинами для JavaFX).
+
+## Шаги для запуска:
+1) Склонируйте репозиторий или загрузите проект в виде ZIP-архива.
+2) Откройте проект в вашей среде разработки.
+3) Настройте библиотеку JavaFX:
+4) Добавьте путь к SDK JavaFX в настройках проекта.
+5) Запустите класс HelloApplication, чтобы открыть приложение.
+   ![image](https://github.com/user-attachments/assets/b53aaf63-bbc4-49b8-9402-97359a7a3710)
+
+
+
+## Основной экран
+### Основной интерфейс включает:
+
+1) Поля для ввода имени сотрудника, ставки, часов работы и максимального количества часов.
+2) Выпадающий список для выбора типа сотрудника (Full-time, Part-time, Contractor).
+3) Таблицу для отображения списка сотрудников с колонками:
+    a) Имя
+    b) Тип
+    c) Зарплата
+4) Кнопки для выполнения следующих действий:
+    a) Добавить сотрудника
+    b) Рассчитать зарплаты
+    c) Удалить сотрудника
+
+
+
+## Примеры ввода и вывода
+### 1. Сотрудник на полной занятости (Full-time Employee)
+Ввод:
+Имя: Иван Иванов
+
+Тип: Full-time
+Годовая зарплата: 60000
+
+Вывод:
+Зарплата: 5000 $/мес
+
+![image](https://github.com/user-attachments/assets/3fc43b3f-e3c5-4b36-82a0-73dbcd51deb8)
+![image](https://github.com/user-attachments/assets/6bb4633c-db25-4799-9201-45ebc101c8e2)
+
+
+### 2. Сотрудник на неполной занятости (Part-time Employee)
+Ввод:
+Имя: Мария Смирнова
+
+Тип: Part-time
+Почасовая ставка: 20 $
+Отработано часов: 100
+
+Вывод:
+Зарплата: 2000 $
+
+![image](https://github.com/user-attachments/assets/3d6e4760-4871-4339-a647-60faec657927)
+![image](https://github.com/user-attachments/assets/9481b5ac-2f7c-43d2-b0a5-93e047d9bd13)
+
+
+### 3. Подрядчик (Contractor)
+Ввод:
+Имя: Алексей Сидоров
+
+Тип: Contractor
+Почасовая ставка: 30 $
+Отработано часов: 50
+Максимально оплачиваемые часы: 40
+
+Вывод:
+Зарплата: 1200 $ (ограничено максимальными 40 часами)
+
+![image](https://github.com/user-attachments/assets/7d467273-34b0-4917-bd63-3e5f5f72a170)
+![image](https://github.com/user-attachments/assets/4b9cb6d1-9dad-4a8b-82d5-fb1c07427802)
+
+
+
+## Скриншоты
+1. Основной экран
+Интерфейс приложения с пустым списком сотрудников.
+![image](https://github.com/user-attachments/assets/796ee4ac-f51c-4a6b-8f0a-17dc7ca316f1)
+![image](https://github.com/user-attachments/assets/ed4d72d0-56b4-4efb-a32b-f0d9586ac40b)
+
+
+
+
+3. Добавление сотрудника
+Процесс добавления сотрудника на полную занятость.
+![image](https://github.com/user-attachments/assets/3fc43b3f-e3c5-4b36-82a0-73dbcd51deb8)
+![image](https://github.com/user-attachments/assets/6bb4633c-db25-4799-9201-45ebc101c8e2)
+
+5. Таблица с сотрудниками
+Список сотрудников, добавленных в приложение.
+
+![image](https://github.com/user-attachments/assets/00374876-a262-4d32-a157-26c5b0807583)
+
